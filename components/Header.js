@@ -11,7 +11,7 @@ import {
 
 function Header() {
   return (
-    <header className="flex flex-col items-center h-auto justify-between sm:flex-row my-6 mr-6">
+    <header className="flex flex-col items-center h-auto justify-between sm:flex-row mt-7 md:mt-10  mr-14">
       <div className="flex flex-grow justify-evenly max-w-2xl">
         <HeaderItem title="HOME" Icon={HomeIcon} />
         <HeaderItem title="TRENDING" Icon={LightningBoltIcon} />
@@ -23,10 +23,10 @@ function Header() {
 
       <Image
         className="object-contain"
-        src="/images/hulu.png"
+        src="/images/hunglu.png"
         alt="test"
-        height={70}
-        width={140}
+        height={40}
+        width={120}
       />
     </header>
   );
