@@ -1,5 +1,6 @@
 import requests from "../utils/requests";
 import { useRouter } from "next/router";
+import { ChevronRightIcon } from "@heroicons/react/outline";
 
 function Nav() {
   const router = useRouter();
@@ -18,6 +19,9 @@ function Nav() {
         ))}
       </div>
       <div className="absolute top-0 right-0 bg-gradient-to-l from-[#06202A] h-8 w-1/12" />
+      <div className="flex items-center justify-center absolute top-0 right-0 h-8 w-8 bg-white/60 hover:bg-white/80 rounded-full text-black">
+        <ChevronRightIcon className="h-6 w-6 cursor-pointer" />
+      </div>
     </nav>
   );
 }
